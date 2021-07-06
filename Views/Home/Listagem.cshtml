@@ -1,0 +1,26 @@
+@model List<ItemServico>
+
+    <h2>Listagem dos Serviços Cadastrados</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+            </tr>
+            
+        </thead>
+    <tbody>
+        @foreach (ItemServico item in Model)
+        {
+            <tr>
+                <td>@item.item</td>
+                <td>@item.valorUnitario</td>
+                <td>@item.quantidade</td>
+            </tr>
+        }
+    </tbody>
+
+    </table>
+    <p>Total de Serviços: @Servico.totalServico</p>

@@ -1,0 +1,19 @@
+@model ItemServico
+
+<form method="POST">
+ 
+ <p>
+     <label asp-for="item">Item:</label>
+     <input asp-for="item" />
+ </p>
+ <p>
+     <label asp-for="valorUnitario">Valor:</label>
+     <input asp-for="valorUnitario" />
+ </p>
+ <p>
+     <label asp-for="quantidade">Quantidade:</label>
+     <input asp-for="quantidade" />
+ </p>
+ 
+    <input type="submit" value="Cadastrar Serviço" />
+</form>
